@@ -1,0 +1,7 @@
+pip install yfinance matplotlibimport yfinance as yf
+import matplotlib.pyplot as plt
+
+# Define a function for SMA crossover trading strategy
+def sma_crossover_strategy(stock_symbol, start_date, end_date, short_window=50, long_window=200):
+    # Download historical data
+    data = yf.download(stock_symbol, start=start_date,
